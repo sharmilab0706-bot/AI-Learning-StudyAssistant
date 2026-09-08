@@ -1,4 +1,4 @@
-# AI Learning & Study Assistant
+# AI-based learning assiatant
 
 ## Project Overview
 
