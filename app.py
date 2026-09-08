@@ -20,3 +20,24 @@ if st.button("Create Study Plan"):
 
 if st.button("Generate Quiz"):
     st.write("Your practice quiz will be generated here.")
+st.subheader("📊 Study Progress")
+
+progress = st.slider("How much have you completed?", 0, 100, 0)
+
+st.progress(progress)
+
+if progress == 100:
+    st.success("🎉 Study completed!")
+else:
+    st.info(f"You have completed {progress}% of your study.")
+
+
+st.subheader("📝 My Notes")
+
+notes = st.text_area("Write your study notes here:")
+
+if st.button("Save Notes"):
+    if notes:
+        st.success("Notes saved successfully! ✅")
+    else:
+        st.warning("Please enter some notes first.")
